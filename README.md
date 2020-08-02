@@ -11,10 +11,17 @@ sh setup.sh
 ```
 
 ## Run
-To run prediction, copy all four MRI contrast imges ending with names (*.t1.nii.gz, *.t2.nii.gz, *,t1ce.nii.gz, *.flair.nii.gz) into the directory **./data** then run the following
+To run prediction, copy all four MRI contrast images ending with names (*.t1.nii.gz, *.t2.nii.gz, *,t1ce.nii.gz, *.flair.nii.gz) into the directory **./data** then run the following
 ```
 cd ./src
 python predict_all_no_gt.py
 ```
-The ouput will be in **./data/results/**
+The output will be in **./data/results/**
+
+## Dependencies
+The repository requires dependencies to be installed before runnning the inference. The dependieies are:
+
+**nibabel, Keras, Tensoflow**
+
+### Alternatively, a Docker Container is avalibale [here](https://hub.docker.com/r/kamleshp/brats19) 
 
