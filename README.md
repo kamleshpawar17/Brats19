@@ -11,7 +11,7 @@ sh setup.sh
 ```
 
 ## Run
-To run prediction, copy all four MRI contrast imges ending with names (*.t1.nii.gz, *.t2.nii.gz, *,t1ce.nii.gz, *.flair.nii.gz) into the directory **data** then run the following
+To run prediction, copy all four MRI contrast imges ending with names (*.t1.nii.gz, *.t2.nii.gz, *,t1ce.nii.gz, *.flair.nii.gz) into the directory **./data** then run the following
 ```
 cd ./src
 python predict_all_no_gt.py
